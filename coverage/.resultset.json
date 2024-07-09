@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/environment.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/application.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/application.rb": {
         "lines": [
           1,
           null,
@@ -58,7 +58,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/boot.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -66,7 +66,7 @@
           1
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/environments/test.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -134,7 +134,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/initializers/cors.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -154,7 +154,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/initializers/filter_parameter_logging.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -166,7 +166,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/initializers/inflections.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -186,7 +186,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/factories/customers.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/factories/customers.rb": {
         "lines": [
           1,
           1,
@@ -196,30 +196,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/factories/invoice_items.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/factories/invoices.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/factories/items.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/factories/invoice_items.rb": {
         "lines": [
           1,
           1,
@@ -231,7 +208,30 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/factories/merchants.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/factories/invoices.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_3/rails_engine/spec/factories/items.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_3/rails_engine/spec/factories/merchants.rb": {
         "lines": [
           1,
           1,
@@ -240,7 +240,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/factories/transactions.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/factories/transactions.rb": {
         "lines": [
           1,
           1,
@@ -252,7 +252,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/config/routes.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -272,7 +272,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/customer.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/customer.rb": {
         "lines": [
           1,
           1,
@@ -284,68 +284,14 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/application_record.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/models/invoice_item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/invoice_item.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/models/invoice_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/invoice.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/models/item_spec.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/models/invoice_item_spec.rb": {
         "lines": [
           1,
           null,
@@ -353,30 +299,26 @@
           1,
           2,
           2,
-          2,
           null,
           1,
-          2,
           2,
           2,
           null,
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/item.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/invoice_item.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
           null,
           1,
-          null,
           null,
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/models/merchant_spec.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/models/invoice_spec.rb": {
         "lines": [
           1,
           null,
@@ -388,13 +330,73 @@
           2,
           2,
           2,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/invoice.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_3/rails_engine/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          2,
           2,
           2,
           null,
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/merchant.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_3/rails_engine/spec/models/merchant_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/merchant.rb": {
         "lines": [
           1,
           1,
@@ -407,7 +409,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/models/transaction_spec.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/models/transaction_spec.rb": {
         "lines": [
           1,
           null,
@@ -423,7 +425,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/models/transaction.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/models/transaction.rb": {
         "lines": [
           1,
           1,
@@ -434,7 +436,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/spec/requests/api/v1/merchants_request_spec.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/spec/requests/api/v1/merchants_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -491,7 +493,7 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/controllers/api/v1/merchants_controller.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/controllers/api/v1/merchants_controller.rb": {
         "lines": [
           1,
           1,
@@ -504,13 +506,13 @@
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/controllers/application_controller.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/austincarr-jones/turing_work/3mod/rails_engine/app/serializers/merchant_serializer.rb": {
+      "/Users/james/Turing/Mod_3/rails_engine/app/serializers/merchant_serializer.rb": {
         "lines": [
           1,
           1,
@@ -519,6 +521,6 @@
         ]
       }
     },
-    "timestamp": 1720547595
+    "timestamp": 1720567580
   }
 }
