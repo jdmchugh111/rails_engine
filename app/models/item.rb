@@ -8,21 +8,17 @@ class Item < ApplicationRecord
                         :unit_price,
                         :merchant_id
 
-  def sorted_items
-    Item.all.sort
-  end
-
   def self.name_search(search_params)
     where("name ILIKE ?", "%#{search_params}%").sort_by {|item| item.name}
   end
 
   def self.price_search(min, max)
     if min != nil && max != nil
-      where("unit_price > #{min}").where("unit_price < #{max}")
+      where("unit_price > #{min}").where("unit_price < #{max}").sort_by {|item| item.name}
     elsif max == nil
-      where("unit_price > #{min}")
+      where("unit_price > #{min}").sort_by {|item| item.name}
     elsif min == nil
-      where("unit_price < #{max}")
+      where("unit_price < #{max}").sort_by {|item| item.name}
     end
   end
 end
