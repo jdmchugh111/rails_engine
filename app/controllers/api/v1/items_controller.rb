@@ -1,13 +1,20 @@
 class Api::V1::ItemsController < ApplicationController
+
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
 
   def index
     if params[:item_id].present?
       item = Item.find(params[:item_id])
       render json: MerchantSerializer.new(Merchant.find(item.merchant_id))
-    else
+    elsif params[:merchant_id].present?
+      render json: ItemSerializer.new(Item.merchant_items(params[:merchant_id]))
+    else  
       render json: ItemSerializer.new(Item.all)
     end
+  end
+
+  def show
+    render json: ItemSerializer.new(Item.find(params[:id]))
   end
 
   def create

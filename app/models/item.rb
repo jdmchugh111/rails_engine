@@ -21,4 +21,9 @@ class Item < ApplicationRecord
       where("unit_price < #{max}").sort_by {|item| item.name}
     end
   end
+
+  def self.merchant_items(merchant_id)
+    Merchant.find(merchant_id).items
+  end
+
 end

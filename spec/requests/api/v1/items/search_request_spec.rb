@@ -8,7 +8,7 @@ describe "Search" do
     get "/api/v1/items/find_all?name=oWb"
 
     json = JSON.parse(response.body, symbolize_names: true)[:data]
-
+    
     expect(json.first[:attributes][:name]).to eq("Cowboy Hat")
   end
 
