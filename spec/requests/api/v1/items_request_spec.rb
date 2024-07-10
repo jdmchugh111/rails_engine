@@ -112,6 +112,7 @@ describe "sad path" do
     expect(response).to_not be_successful
   end
 end
+
 describe "Get all Items" do
   it "sends a list of items" do
     merchant_1 = create(:merchant)

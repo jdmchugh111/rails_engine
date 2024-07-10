@@ -1,5 +1,6 @@
 class Api::V1::ItemsController < ApplicationController
 
+
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
 
   def index
@@ -16,6 +17,7 @@ class Api::V1::ItemsController < ApplicationController
   def show
     render json: ItemSerializer.new(Item.find(params[:id]))
   end
+
 
   def create
     item = Item.new(item_params)
