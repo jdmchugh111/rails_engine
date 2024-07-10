@@ -2,8 +2,8 @@ class Api::V1::ItemsController < ApplicationController
   rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
 
   def index
-    item = Item.find(params[:item_id])
     if params[:item_id].present?
+      item = Item.find(params[:item_id])
       render json: MerchantSerializer.new(Merchant.find(item.merchant_id))
     else
       render json: ItemSerializer.new(Item.all)
@@ -22,11 +22,8 @@ class Api::V1::ItemsController < ApplicationController
   def update
     item = Item.find(params[:id])
     if params[:merchant_id].present? && !Merchant.find(params[:merchant_id]).present?
-      render json: ErrorSerializer.new(ErrorMessage.new("merchant_id does not exist", 400)).serialize_json, status: :bad_request
     elsif item.update(item_params) 
       render json: ItemSerializer.new(item), status: :created
-    else
-      render json: ErrorSerializer.new(ErrorMessage.new("all attributes must be passed in params", 400)).serialize_json, status: :bad_request
     end
   end
 

@@ -74,4 +74,41 @@ describe "Get Merchant Data for given Item" do
     expect(merchant_hash[:attributes]).to be_a(Hash)
     expect(merchant_hash[:attributes][:name]).to be_a(String)
   end
+
+  it "if item id is not given (get all items)" do
+    merchant = create(:merchant)
+    item1 = create(:item, merchant: merchant)
+    item2 = create(:item, merchant: merchant)
+
+    get "/api/v1/items"
+    all_items = JSON.parse(response.body, symbolize_names: true)[:data]
+    expect(all_items.count).to eq(2)
+  end
+end
+
+
+describe "sad path" do
+  it "must have all attributes to create a new item" do
+    merchant_1 = create(:merchant)
+    item_params = ({
+                    name: 'Cowboy Hat',
+                    description: 'It looks cool',
+                    merchant_id: merchant_1.id
+                  })
+    headers = {"CONTENT_TYPE" => "application/json"}
+
+    post "/api/v1/items", headers: headers, params: JSON.generate(item: item_params)
+
+    expect(response).to_not be_successful
+  end
+
+  it "must not pass an invalid merchant_id when updating an item" do
+    merchant = create(:merchant)
+    id = create(:item, merchant: merchant).id
+    headers = {"CONTENT_TYPE" => "application/json"}
+  
+    patch "/api/v1/items/#{id}", headers: headers, params: JSON.generate({merchant_id: 999999})
+    
+    expect(response).to_not be_successful
+  end
 end
