@@ -53,3 +53,25 @@ describe "Delete an Item" do
     expect{Item.find(item.id)}.to raise_error(ActiveRecord::RecordNotFound)
   end
 end
+
+describe "Get Merchant Data for given Item" do
+  it "can get single merchant if given item id" do
+    merchant = create(:merchant)
+    item = create(:item, merchant: merchant)
+
+    get "/api/v1/items/#{item.id}/merchant"
+
+    merchant_hash = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    expect(response).to be_successful
+    
+    expect(merchant_hash).to be_a(Hash)
+
+    expect(merchant_hash).to have_key(:id)
+    expect(merchant_hash[:id]).to be_a(String)
+    
+    expect(merchant_hash).to have_key(:attributes)
+    expect(merchant_hash[:attributes]).to be_a(Hash)
+    expect(merchant_hash[:attributes][:name]).to be_a(String)
+  end
+end
