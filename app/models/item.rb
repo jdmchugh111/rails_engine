@@ -6,4 +6,8 @@ class Item < ApplicationRecord
   validates_presence_of :name,
                         :description,
                         :unit_price
+
+  def self.merchant_items(merchant_id)
+    Merchant.find(merchant_id).items
+  end
 end
