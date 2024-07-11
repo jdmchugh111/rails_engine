@@ -32,9 +32,9 @@ end
 
 describe "Get one Merchant" do
   it "can get one merchant by its id" do
-    id = create(:merchant).id
+    merchant_1 = create(:merchant)
 
-    get "/api/v1/merchants/#{id}"
+    get "/api/v1/merchants/#{merchant_1.id}"
     
     merchant = JSON.parse(response.body, symbolize_names: true)[:data]
 
@@ -51,6 +51,6 @@ describe "Get one Merchant" do
     expect(merchant).to have_key(:attributes)
     expect(merchant[:attributes]).to be_a(Hash)
    
-    expect(merchant[:attributes][:name]).to be_a(String)
+    expect(merchant[:attributes][:name]).to eq(merchant_1.name)
   end
 end

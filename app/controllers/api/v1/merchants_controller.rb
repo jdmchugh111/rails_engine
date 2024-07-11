@@ -1,4 +1,6 @@
 class Api::V1::MerchantsController < ApplicationController
+  rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
+
   def index
     render json: MerchantSerializer.new(Merchant.all)
   end
@@ -7,8 +9,11 @@ class Api::V1::MerchantsController < ApplicationController
     render json: MerchantSerializer.new(Merchant.find(params[:id]))
   end
 
-  # def find
-  #   render json: MerchantSerializer.new(Merchant.search(params[:name]))
-  # end
-  # #move this to a SearchController #show
+private
+
+  def not_found_response(exception)
+    render json: ErrorSerializer.new(ErrorMessage.new(exception.message, 404))
+      .serialize_json, status: :not_found
+  end
+
 end
