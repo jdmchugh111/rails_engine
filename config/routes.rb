@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/api/v1/items/find_all", to: "api/v1/items/search#index"
-  get "api/v1/merchants/find", to: "api/v1/merchants#find"
+  get "api/v1/merchants/find", to: "api/v1/merchants/search#show"
 
   namespace :api do
     namespace :v1 do
